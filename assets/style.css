@@ -1,4 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --bg: #eee;
+}
 * {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
+}
+
+body,
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: inherit;
+  font-family: 'Open Sans', sans-serif;
+}
+
+article,
+canvas {
+  width: 50vw;
+  height: 100vh;
+}
+canvas {
+  background-color: var(--bg);
+}
+
+article {
+  position:relative;
+  display:inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title,
+.signature-pad--actions {
+  position: absolute;
+  top: 2rem;
+  text-align: center;
+}
+
+#title>div:nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#question {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom:1rem;
+}
+
+#qCounter {
+  color: #777;
+  font-size: .8rem;
+}
+
+#qCounter>span {
+  padding: 1rem .25rem;
+}
+
+#answers {
+  margin-top: 1rem;
+}
+
+input[type=radio] {
+  cursor: pointer;
+}
+label {
+  user-select: none;
+}
+
+button {
+  font-size:.6rem;
+  font-weight:600;
+  padding: .6rem 1.3rem;
+  background-color: transparent;
+  border:1px solid #111;
+  border-radius:1.1rem;
+}
+button:hover {
+  background-color: var(--bg);
+}
+.signature-pad--actions {
+  width:50vw;
+  text-align: center;
 }

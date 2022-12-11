@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz</title>
-  <link rel="stylesheet" href="./assets/style.css"/>
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
-  
-  <script src="./assets/script.js"></script>
+  <main>
+    </div>
+    <!-- QUESTIONS -->
+    <article id="qq">
+      <div id="title">
+        <div>Title</div>
+        <div>Subtitle</div>
+        <div id="qCounter">
+          <span id="qNumber">0</span>/<span id="qTotal">10</span>
+        </div>
+      </div>
+      <section id="question">Question lorem ipsum</section>
+      <section id="answers">
+        <input type="radio" id="a1" name="answer">
+        <label for="a1">0 - 30</label><br>
+        <input type="radio" id="a2" name="answer">
+        <label for="a2">31 - 60</label><br>
+        <input type="radio" id="a3" name="answer">
+        <label for="a3">61 - 100</label><br>
+        <input type="radio" id="a4" name="answer">
+        <label for="a4">101 - 120</label><br><br>
+      </section>
+      <button id="submit">SUBMIT</button>
+    </article>
+    <!-- SCRATCHPAD -->
+    <div id="signature-pad" class="signature-pad">
+      <div class="signature-pad--body">
+        <canvas></canvas>
+      </div>
+      <div class="signature-pad--footer">
+    
+        <div class="signature-pad--actions">
+          <div>
+            <button type="button" class="button clear" data-action="clear">CLEAR</button>
+            <button type="button" class="button" data-action="change-color">COLOR</button>
+            <button type="button" class="button" data-action="undo">UNDO</button>
+            <button type="button" class="button save" data-action="save-png">SAVE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./assets/signature_pad.js"></script>
+  <script src="./assets/app.js"></script>
 </body>
+
 </html>
