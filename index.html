@@ -15,24 +15,25 @@
     <!-- QUESTIONS -->
     <article id="qq">
       <div id="title">
-        <div>Title</div>
-        <div>Subtitle</div>
+        <div id="t">Title</div>
+        <div id="s">Subtitle</div>
         <div id="qCounter">
-          <span id="qNumber">0</span>/<span id="qTotal">10</span>
+          <span id="qn">1</span>/<span id="qt">12</span>
         </div>
       </div>
-      <section id="question">Question lorem ipsum</section>
+      <section id="q">Question lorem ipsum</section>
       <section id="answers">
+        <input type="radio" id="a0" name="answer" checked>
+        <label for="a0" id="al0"></label><br>
         <input type="radio" id="a1" name="answer">
-        <label for="a1">0 - 30</label><br>
+        <label for="a1" id="al1" ></label><br>
         <input type="radio" id="a2" name="answer">
-        <label for="a2">31 - 60</label><br>
+        <label for="a2" id="al2" ></label><br>
         <input type="radio" id="a3" name="answer">
-        <label for="a3">61 - 100</label><br>
-        <input type="radio" id="a4" name="answer">
-        <label for="a4">101 - 120</label><br><br>
+        <label for="a3" id="al3" ></label><br>
       </section>
       <button id="submit">SUBMIT</button>
+      <button id="okay" class="inactive">OKAY</button>
     </article>
     <!-- SCRATCHPAD -->
     <div id="signature-pad" class="signature-pad">
@@ -53,8 +54,9 @@
     </div>
   </main>
 
-  <script src="./assets/signature_pad.js"></script>
-  <script src="./assets/app.js"></script>
+  <script src="./assets/script/qa.js"></script>
+  <script src="./assets/script/signature_pad.js"></script>
+  <script src="./assets/script/app.js"></script>
 </body>
 
 </html>
